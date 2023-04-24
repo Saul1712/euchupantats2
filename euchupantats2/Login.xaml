@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="euchupantats2.Login">
+    <Grid BackgroundColor="Beige" >
+        
+        <StackLayout>
+        <Frame BackgroundColor="#192a56" 
+               Padding="24" CornerRadius="10" 
+               BorderColor="White">
+            
+            <Label Text="login Uisrael!" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="30"/>
+            </Frame>
+            <Frame Margin="10"
+                   BorderColor="#192a56"
+                   CornerRadius="150"
+                   HeightRequest="100" 
+                   WidthRequest="100"
+                   IsClippedToBounds="True" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" >
+            
+            <Image Source="iconologin.png" 
+                    BackgroundColor="#ffffff"
+                    Aspect="AspectFill"
+                    Margin="-8"
+                    HeightRequest="100"
+                    WidthRequest="100"/>
+             </Frame>
+
+             <Entry Placeholder="Usuario" 
+                    IsSpellCheckEnabled="True"  
+                    IsTextPredictionEnabled="True" 
+                    IsPassword="False" 
+                    TextColor="Black" 
+                    FontSize="25" 
+                    HorizontalTextAlignment="Center" 
+                    Margin="20" 
+                    x:Name="txtUsuario"/>
+            
+             <Entry Placeholder="Contraseña" 
+                    IsPassword="True" 
+                    TextColor="Black" 
+                    FontSize="25" 
+                    HorizontalTextAlignment="Center" 
+                    Margin="20" 
+                    x:Name="txtContraseña"/>
+       
+             <StackLayout Orientation="Vertical" 
+                          HeightRequest="120" 
+                          BackgroundColor="#f5f6fa" 
+                          Padding="10" 
+                          Margin="20">
+             <StackLayout Spacing="0" 
+                          BackgroundColor="#f5f6fa" 
+                          Orientation="Horizontal" 
+                          HorizontalOptions="Center" 
+                          Padding="10">
+                 
+             <ImageButton BackgroundColor="#f5f6fa" 
+                          Source="aceptar.png" 
+                          HeightRequest="100" 
+                          WidthRequest="100" 
+                          x:Name="Ok" 
+                          Clicked="Ok_Clicked"/>
+                 
+             <ImageButton BackgroundColor="#f5f6fa" 
+                          Source="no.png" 
+                          HeightRequest="100" 
+                          WidthRequest="90" 
+                          x:Name="btnNo"  
+                          Clicked="btnNo_Clicked_1"/>
+                 
+             </StackLayout>
+             
+             </StackLayout>
+             </StackLayout>
+             </Grid>
+</ContentPage>

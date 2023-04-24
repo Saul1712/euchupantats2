@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="euchupantats2.Tarea2" Visual="Material">
+    <ContentPage.Content>
+
+        <Grid  BackgroundColor="#FEE6B9">
+            <ScrollView>
+                <StackLayout BackgroundColor="#FEE6B9" Margin="10,10">
+                    <Frame VerticalOptions="FillAndExpand"
+                           Margin="15,5,15,10" CornerRadius="20" BackgroundColor="#AFA83A">
+                        <StackLayout >
+                            <Label Text="Sistema de Calificaciones Uisrael" 
+                                   FontSize="25" 
+                                   TextColor="Black" 
+                                   HorizontalTextAlignment="Center" 
+                                   FontAttributes="Italic"/>
+
+                            <Label Text="PARCIAL 1 UISRAEL"  
+                                       FontSize="18"  
+                                       TextColor="Black" 
+                                       HorizontalTextAlignment="Center"  
+                                       FontAttributes="Italic" />
+
+                            <Label Text="NOTA SEG1" 
+                                       FontSize="24" 
+                                       TextColor="Black" 
+                                       HorizontalTextAlignment="Start"  
+                                       BackgroundColor="#AFA83A" 
+                                       FontAttributes="Italic"/>
+                            <Frame CornerRadius="20" Margin="2">
+                            <Entry Text="{Binding Item.Text}" 
+                                       x:Name="txtNota1" 
+                                       Placeholder="Ingrese Nota" 
+                                       Keyboard="Numeric" 
+                                       BackgroundColor="White"/>
+                            </Frame>   
+                            <Label Text="NOTA EXAMEN 1" 
+                                    FontSize="18" 
+                                    TextColor="Black" 
+                                    HorizontalTextAlignment="Start"  
+                                    BackgroundColor="#AFA83A"/>
+                            <Frame CornerRadius="20" Margin="2"> 
+                            <Entry x:Name="txtExamen1"
+                                   Placeholder="Ingrese Nota Examen" 
+                                   Keyboard="Numeric"
+                                   BackgroundColor="White"/>
+                            </Frame> 
+                            <Entry x:Name="txtPromedio1"  
+                                   Placeholder="PromedioP1" 
+                                   IsReadOnly="True" />
+
+                            <Label Text="PARCIAL 2 UISRAEL" 
+                                   FontSize="18" 
+                                   TextColor="Black" 
+                                   HorizontalTextAlignment="Center"  
+                                   FontAttributes="Italic" />
+
+                            <Label Text="NOTA SEG2" 
+                                   FontSize="24" 
+                                       TextColor="Black" 
+                                       HorizontalTextAlignment="Start"  
+                                       BackgroundColor="#AFA83A" 
+                                       FontAttributes="Italic"/>
+                            <Frame CornerRadius="20" Margin="2">
+                            <Entry x:Name="txtNota2" 
+                                   Placeholder="Ingrese Nota" 
+                                   Keyboard="Numeric"
+                                   BackgroundColor="White"/>
+                            </Frame>
+                            <Label Text="NOTA EXAMEN 2" 
+                                   FontSize="18" 
+                                   TextColor="Black" 
+                                   HorizontalTextAlignment="Start"  
+                                   BackgroundColor="#AFA83A"
+                                   FontAttributes="Italic"/>
+                            <Frame CornerRadius="20" Margin="2"> 
+                            <Entry x:Name="txtExamen2" 
+                                   Placeholder="Ingrese Nota Examen" 
+                                   Keyboard="Numeric"
+                                   BackgroundColor="White"/>
+                            </Frame>
+                            <Entry x:Name="txtPromedio2"
+                                   Placeholder="PromedioP2" 
+                                   IsReadOnly="True" />
+
+                            <Entry x:Name="txtPromedioF" 
+                                   TextColor="Black" 
+                                   Placeholder="PromedioFinal" 
+                                   IsReadOnly="True"  />
+
+                            <Button x:Name="btnCalcularP2" 
+                                    FontSize="Small" 
+                                    FontAttributes="Italic" 
+                                    BackgroundColor="#FDE080" 
+                                    BorderWidth="10" 
+                                    TextColor="Black"  
+                                    CornerRadius="10" 
+                                    WidthRequest="150" 
+                                    HeightRequest="35" 
+                                    Text="Calcular" 
+                                    Clicked="btnCalcularP2_Clicked"/>
+
+                            <Button x:Name="btnLimpiar"
+                                    FontSize="Small" 
+                                    FontAttributes="Italic" 
+                                    BackgroundColor="#FDE080" 
+                                    TextColor="Black"  
+                                    BorderWidth="10" 
+                                    CornerRadius="10" 
+                                    WidthRequest="150" 
+                                    HeightRequest="35" 
+                                    Text="Limpiar" 
+                                    Clicked="btnLimpiar_Clicked"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
